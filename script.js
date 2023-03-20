@@ -13,12 +13,12 @@ const two = document.querySelector('.two')
 // Conwerter
 const convertCToF = () => {
 	let convertValueC = converter.value * 1.8 + 32
-	result.textContent = `${converter.value}°C to ${convertValueC.toFixed(1)}°F`
+	result.textContent = `${converter.value}°C equal ${convertValueC.toFixed(1)}°F`
 	converter.value = ''
 }
 const convertFToC = () => {
 	let convertValueF = (converter.value - 32) / 1.8
-	result.textContent = `${converter.value}°F to ${convertValueF.toFixed(1)}°C`
+	result.textContent = `${converter.value}°F equal ${convertValueF.toFixed(1)}°C`
 	converter.value = ''
 }
 
