@@ -10,7 +10,10 @@ body {
 	align-items: center;
 	flex-direction: column;
 	position: relative;
+	margin: 0 auto;
 	height: 100vh;
+	width: 100%;
+	max-width: 1200px;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
 	background-color: #1e1d23;
@@ -22,31 +25,41 @@ body {
 }
 
 label {
-    font-size: 36px;
+	font-size: 36px;
 }
 
 input {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    padding: 15px 40px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding: 15px 40px;
 	border-radius: 8px;
-    font-size: 20px;
+	font-size: 20px;
 }
 
 button {
+	/* display: flex; */
+	justify-content: center;
 	padding: 20px 40px;
 	margin: 20px;
-	cursor: pointer;
+	width: 200px;
 	background: none;
 	color: #fff;
-	font-size: 18px;
 	border: 3px solid #ddd;
 	border-radius: 8px;
-	transition: 0.3s;
+	font-size: 18px;
 	text-transform: uppercase;
+	transition: 0.3s;
+	cursor: pointer;
 }
 
 button:hover {
-    background-color: #ddd;
+	background-color: #ddd;
 	color: #000;
+}
+
+
+@media (min-width: 340px) and (max-width: 768px){
+	button{
+		display: flex;
+	}
 }

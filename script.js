@@ -45,7 +45,7 @@ const convertDeg = () => {
 	} else if (one.textContent.match('°F') && converter.value != 0) {
 		convertFToC()
 	} else if ((converter.value == '')) {
-		result.textContent = 'You should set value!'
+		result.textContent = 'You should set a number!'
 	}
 }
 
